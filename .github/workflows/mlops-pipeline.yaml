@@ -178,3 +178,4 @@ jobs:
           COMMIT_HASH=$(echo "${{ github.sha }}" | cut -c1-7)
           docker push ${{ vars.DOCKERHUB_USERNAME }}/house-price-fastapi:$COMMIT_HASH
           docker tag ${{ vars.DOCKERHUB_USERNAME }}/house-price-fastapi:$COMMIT_HASH ${{ vars.DOCKERHUB_USERNAME }}/house-price-fastapi:latest
+          docker push ${{ vars.DOCKERHUB_USERNAME }}/house-price-fastapi:latest
