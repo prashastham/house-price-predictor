@@ -6,19 +6,27 @@ on:
       run_all:
         description: 'Run all jobs'
         required: false
+        type: boolean
         default: true
+
       run_data_processing:
         description: 'Run data processing job'
         required: false
+        type: boolean
         default: false
+
       run_model_training:
         description: 'Run model training job'
         required: false
+        type: boolean
         default: false
+
       run_build_and_publish:
         description: 'Run build and publish job'
         required: false
+        type: boolean
         default: false
+        
   release:
     types: [created]
     branches: [main]
